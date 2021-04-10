@@ -35,7 +35,7 @@
   
 <div id ="hero">
   <video autoplay muted loop poster="">
-    <source src ="img/video.mp4" type = "video/mp4">
+    <source src = "World - 1992.mp4" type = "video/mp4">
   </video>
   
   <div class="content">
