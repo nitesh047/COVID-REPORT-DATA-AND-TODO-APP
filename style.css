@@ -1,0 +1,185 @@
+
+#hero{
+  position: relative;
+  
+  background-color: #10332f;
+  
+}
+#hero video{
+ height: 100vh;
+ width: 100%;
+ background-position: absolute;
+ z-index: 10;
+ object-fit: cover;
+ opacity: 70%;
+
+}
+#hero .content{
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+ .ml14 {
+   font-weight: 200;
+   font-size: 3.2em;
+ }
+ 
+ .ml14 .text-wrapper {
+   position: relative;
+   display: inline-block; 
+   padding-top: 4em;
+   padding-right: 0.05em;
+   padding-bottom: 0.15em;
+ }
+ 
+ .ml14 .line {
+   opacity: 0;
+   position: absolute;
+   left: 0;
+   height: 2px;
+   width: 100%;
+   background-color: white;
+   transform-origin: 100% 100%;
+   bottom: 0;
+ }
+ .ml14 h1{
+color: white;
+font-size: 50px;;
+
+ }
+ 
+ .ml14 .letter {
+   display: inline-block;
+   line-height: 1em;
+   color:#e68b04;
+   font-size: 100px;
+ }
+ .btn1{
+  background-color: #e68b04;
+  color: White;
+  font-size: 20px;
+  padding: 10px;
+}
+.btn1:hover{
+  font-size: 21px;
+  color: white;
+}
+
+ 
+ footer{
+ 
+   background-color: #101010;
+   color:#9d9d9d;
+   bottom: 0;
+   width: 100%;
+ }
+ @media screen and (max-width: 991px) {
+  
+   footer{
+    padding: 0px 80PX;
+   }
+ 
+ }
+ body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #10332f;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#96c93d),
+    to(#00b09b)
+  );
+  background: linear-gradient(to right, #96c93d, #00b09b); */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 4px 16px;
+}
+
+#cards-container {
+  overflow: hidden;
+  margin: 20px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 99999px;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 235px;
+  margin: 15px 7.5px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.card .img {
+  max-width: 220px;
+  height: 220px;
+  display: inline-block;
+}
+
+#slide-left-container,
+#slide-right-container {
+  display: none;
+}
+
+#slide-left-container.active,
+#slide-right-container.active {
+  display: block;
+  cursor: pointer;
+}
+
+.slide-left,
+.slide-right {
+  border-color: #fff;
+  border-style: solid;
+  height: 20px;
+  width: 20px;
+  margin-top: 30%;
+}
+
+.slide-left {
+  border-width: 4px 0 0 4px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-left: 40%;
+}
+
+.slide-right {
+  border-width: 4px 4px 0 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-left: 22%;
+}
+
+ 
+ 
