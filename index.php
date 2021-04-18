@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <head>
-  <title>Sample-website</title>
+  <title>Free-fire</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
@@ -23,7 +23,7 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">Home</a></li>
 
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="Todo-List.php">Project</a></li>
           
             <li><a href="http://localhost/new%20project/login.php" >Login</a></li>
             <li><a href="http://localhost/new%20project/Sign%20up.php">Sign in</a></li>
@@ -35,7 +35,7 @@
   
 <div id ="hero">
   <video autoplay muted loop poster="">
-    <source src = "World - 1992.mp4" type = "video/mp4">
+    <source src ="img/video.mp4" type = "video/mp4">
   </video>
   
   <div class="content">
@@ -182,14 +182,54 @@
            <button class="btn btn-primary">Submit</button>
          </form>
 
+      </div><br>
+      <div class="container">
+       <center> <p><a href="#mymodal" data-toggle="modal">Comment on the website</a></p></center>
+       <center> <p><a href="1.php">see all comments</a></p> </center>
+       <center> <p id="timee"></p> </center>
       </div>
-      <center><p>Copyright @ techtutor 2021<br>India</p></center>
+      
+     <center> <p>Copyright @ techtutor 2021<br>India</p></center>
+    </div>
+  </div>
+  <div class="modal" id="mymodal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="text-center">Comment Here ("Say Hello")</h3>
+          <form  action="comment.php" method="post" >
+            <div class="form-group">
+                <label for="comment">Name</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="comment">comment</label>
+                <textarea type="comment" class="form-control" id="comment" rows="3" name="comment"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" value="submit">Submit</button>
+          </form><br><Br>
+          <center> <p><a href="1.php">see all comments</a></p> </center>
+         
+        </div>
+      </div>
     </div>
   </div>
 <footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-  <script src="bootstrap.js"></script>
-  <script src="boot.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/boot.js"></script>
+  <script>
+  var b;
+  var date;
+  var a;
+   setInterval(() => {
+        a = new Date();
+        b = a.getHours() + ":" + a.getMinutes() + ":" +a.getSeconds();
+         date = a.toLocaleDateString();
+        document.getElementById("timee").innerHTML="The Time is " +b +" on Date "+ date ;
+    }, 1000);
+
+  </script>
 </body>
