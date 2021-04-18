@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
@@ -35,7 +35,7 @@
   
 <div id ="hero">
   <video autoplay muted loop poster="">
-    <source src ="img/video.mp4" type = "video/mp4">
+    <source src ="World.mp4" type = "video/mp4">
   </video>
   
   <div class="content">
@@ -218,8 +218,8 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/boot.js"></script>
+  <script src="bootstrap.js"></script>
+  <script src="boot.js"></script>
   <script>
   var b;
   var date;
