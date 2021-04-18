@@ -13,7 +13,7 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.css">
     <style>
        
 
@@ -142,7 +142,7 @@
     </script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-  <script src="js/bootstrap.js"></script>
+  <script src="bootstrap.js"></script>
 
   </body>
 </html>
